@@ -3,6 +3,8 @@ import pandas as pd
 
 def get_figure(plot_data, segregated, fit_line):
         fig = go.Figure(layout = go.Layout(width=900))
+        fig.update_xaxes(title_text = "Exercise")
+        fig.update_yaxes(title_text = "Cholesterol")
         if not segregated:
                 fig.add_trace(go.Scatter(
                         x = plot_data.exercise,
