@@ -44,8 +44,17 @@ with tab2:
         st.markdown("""
 ### Code
 
-Our code is hosted in the following GithHub repository: 
-""")
+Our code is hosted in the following GithHub repository: https://github.com/RodrigoGrijalba/python-dashboard-class
+"""
+)
+
+with tab3:
+        st.markdown("""
+### References:
+
+Glymour, Madelyn, Judea Pearl, and Nicholas P. Jewell. Causal inference in statistics: A primer. John Wiley & Sons, 2016. 
+"""
+)
 
 
 
