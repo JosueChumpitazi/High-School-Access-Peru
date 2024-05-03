@@ -11,6 +11,17 @@ tab1, tab2, tab3 = st.tabs(["Simpson's Paradox", "Code", "References"])
 
 with tab1:
 
+        st.markdown(
+"""
+# Simpson's Paradox Explained
+
+Simpson's paradox posits that, when we calculate correlations in aggregated data for a given population, we may fin a positive (negative) correlation, but when the data are disaggregated, the correlation may have the opposite sign.
+
+In this case, we simulate data such that we have a confounding variable, namely age. If age has an effect both exercise and cholesterol, not taking it into account when performing our estimation will will render us a biased estimator of the correlation between cholesterol and exercise. In this case, the bias is large enough that it reverts the sign: our correlation initially is positive, but when we segregate by age, the correlation is negative.
+
+The data generating process is illustrated by the DAG further down bellow.
+"""
+        )
         col1, col2 = st.columns([1, 2])
         st.write("---")
 
